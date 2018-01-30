@@ -1,0 +1,16 @@
+!= partial('_comp/nav/sidebar')
+#stage.stage
+  .welcome-block
+    .bg-image
+      .fs-bg(style="background-image:url(/images/banner.png)")
+    .block.block-inverse.block-fill-height.app-header
+      != partial('_comp/nav/top')
+      != partial('_comp/home/welcome/index')
+  
+  != partial('_comp/home/do_more/index')
+  != partial('_comp/home/workflows/index')
+  != partial('_comp/home/task_manager/index')
+  != partial('_comp/home/reporting/index')
+  != partial('_comp/home/features/index')
+  != partial('_comp/home/contact/index')
+  != partial('_comp/footer/index')

@@ -1,0 +1,67 @@
+doctype html(lang='en')
+head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description', content='')
+    meta(name='keywords', content='')
+    meta(name='author', content='')
+    title flo &middot; the smart solution to coordinate multiple people and teams around content creation.
+
+    link(href='https://fonts.googleapis.com/css?family=Muli:400,700', rel='stylesheet')
+    link(href='/styles/toolkit-startup.css', rel='stylesheet')
+    link(href='/styles/openly.css', rel='stylesheet')
+    link(href='/styles/animate.min.css', rel='stylesheet')
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css")
+      
+    link(rel='apple-touch-icon', sizes='57x57', href='/icons/apple-icon-57x57.png')
+    link(rel='apple-touch-icon', sizes='60x60', href='/icons/apple-icon-60x60.png')
+    link(rel='apple-touch-icon', sizes='72x72', href='/icons/apple-icon-72x72.png')
+    link(rel='apple-touch-icon', sizes='76x76', href='/icons/apple-icon-76x76.png')
+    link(rel='apple-touch-icon', sizes='114x114', href='/icons/apple-icon-114x114.png')
+    link(rel='apple-touch-icon', sizes='120x120', href='/icons/apple-icon-120x120.png')
+    link(rel='apple-touch-icon', sizes='144x144', href='/icons/apple-icon-144x144.png')
+    link(rel='apple-touch-icon', sizes='152x152', href='/icons/apple-icon-152x152.png')
+    link(rel='apple-touch-icon', sizes='180x180', href='/icons/apple-icon-180x180.png')
+    link(rel='icon', type='image/png', sizes='192x192', href='/icons/android-icon-192x192.png')
+    link(rel='icon', type='image/png', sizes='32x32', href='/icons/favicon-32x32.png')
+    link(rel='icon', type='image/png', sizes='96x96', href='/icons/favicon-96x96.png')
+    link(rel='icon', type='image/png', sizes='16x16', href='/icons/favicon-16x16.png')
+    link(rel='manifest', href='/icons/manifest.json')
+    meta(name='msapplication-TileColor', content='#ffffff')
+    meta(name='msapplication-TileImage', content='/icons/ms-icon-144x144.png')
+  body(style="overflow-x:hidden")
+
+    style.
+      /* note: this is a hack for ios iframe for bootstrap themes shopify page */
+      /* this chunk of css is not part of the toolkit :) */
+      /* …curses ios, etc… */
+      @media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+        body {
+          width: 1px;
+          min-width: 100%;
+          *width: 100%;
+        }
+        #stage {
+          height: 1px;
+          overflow: auto;
+          min-height: 100vh;
+          -webkit-overflow-scrolling: touch;
+        }
+      }
+  body
+    != yield
+    // script.
+      //- (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      //- (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      // m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      //- })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      //- ga('create', 'UA-75185785-1', 'auto');
+      //- ga('send', 'pageview');
+
+    script(src='/scripts/jquery.min.js')  
+    script(src='/scripts/toolkit.js')
+    script(src='/scripts/autosize.min.js')
+    script(src='/scripts/flickrapi.js')
+    script(src='/scripts/main.js')

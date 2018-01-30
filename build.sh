@@ -1,4 +1,3 @@
-rm -rf build
-mkdir build
-harp compile ./ build
-rm -f build/build.sh
+rm -rf ../website-build/*
+harp compile ./ ../website-build
+rm -f ../website-build/build.sh

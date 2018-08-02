@@ -1,69 +1,104 @@
-.banner-grad(@opacity){
-  @welcome-color-1: rgba(52,152,218,@opacity);
-  @welcome-color-2: rgba(53,72,93,@opacity);
+.banner-grad(@opacity) {
+  @welcome-color-1: rgba(52, 152, 218, @opacity);
+  @welcome-color-2: rgba(53, 72, 93, @opacity);
   background: @welcome-color-1;
-  background: -moz-linear-gradient(top, @welcome-color-1 0%, @welcome-color-2 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, @welcome-color-1), color-stop(100%, @welcome-color-2));
-  background: -webkit-linear-gradient(top, @welcome-color-1 0%, @welcome-color-2 100%);
-  background: -o-linear-gradient(top, @welcome-color-1 0%, @welcome-color-2 100%);
-  background: -ms-linear-gradient(top, @welcome-color-1 0%, @welcome-color-2 100%);
-  background: linear-gradient(to bottom, @welcome-color-1 0%, @welcome-color-2 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3498da', endColorstr='#35485d', GradientType=0 );
+  background: -moz-linear-gradient(
+    top,
+    @welcome-color-1 0%,
+    @welcome-color-2 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    left bottom,
+    color-stop(0%, @welcome-color-1),
+    color-stop(100%, @welcome-color-2)
+  );
+  background: -webkit-linear-gradient(
+    top,
+    @welcome-color-1 0%,
+    @welcome-color-2 100%
+  );
+  background: -o-linear-gradient(
+    top,
+    @welcome-color-1 0%,
+    @welcome-color-2 100%
+  );
+  background: -ms-linear-gradient(
+    top,
+    @welcome-color-1 0%,
+    @welcome-color-2 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    @welcome-color-1 0%,
+    @welcome-color-2 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(
+      startColorstr="#3498da",
+      endColorstr="#35485d",
+      GradientType=0
+    );
 }
 
-.banner{
-  .banner-grad(0.9)
+.banner {
+  .banner-grad(0.9);
 }
-.welcome-block{
-  .block{
+.welcome-block {
+  .block {
     background: transparent;
     // height: 100%;
   }
-  .bg-image{
+  .bg-image {
     width: 100%;
     height: 100%;
     position: absolute;
     z-index: 0;
-    .fs-bg{
+    .fs-bg {
       width: 100%;
       height: 100%;
       position: absolute;
       background-size: cover;
     }
-    .gradient{
+    .gradient {
       width: 100%;
       height: 100%;
       position: absolute;
-      .banner-grad(0.7)
+      .banner-grad(0.7);
     }
   }
 }
-.team-member{
-  width: 100%
+.team-member {
+  width: 100%;
 }
 
-#welcome ul{
+#welcome ul {
   display: none;
 }
-.social-link{
+.social-link {
   padding: 10px 12px 14px 12px;
   display: block;
   float: left;
   border-radius: 50%;
-  background: rgba(53,72,93,1);
+  background: rgba(53, 72, 93, 1);
   color: #fff;
-  &:hover{
+  &:hover {
     color: #fff;
   }
-  &:active{
+  &:active {
     color: #fff;
   }
-  &:visited{
+  &:visited {
     color: #fff;
   }
 }
-.img-left{position: relative;height: 500px;}
-.img-left img{position: absolute;right: 0;}
+.img-left {
+  position: relative;
+  height: 500px;
+}
+.img-left img {
+  position: absolute;
+  right: 0;
+}
 /***********************
 Default start from here.
 Delete everything we dont need.
@@ -72,10 +107,9 @@ Delete everything we dont need.
 /* navbar */
 .app-navbar {
   font-weight: 500;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
   position: absolute;
 }
-
 
 /* header block */
 .app-graph {
@@ -91,13 +125,12 @@ Delete everything we dont need.
   }
 }
 
-
 /* iphone block */
 .app-iphone-block {
   background-color: #f7f7f7;
-  img.app-iphone{
+  img.app-iphone {
     width: 100%;
-    max-width:400px;
+    max-width: 400px;
     margin: 0 auto;
     display: block;
   }
@@ -109,14 +142,13 @@ Delete everything we dont need.
   }
 }
 
-
 /* code block */
 .app-code-block {
   background-color: #35485d;
   overflow: hidden;
 }
 .app-code {
-  color: #6EA4CF;
+  color: #6ea4cf;
   border: #495158 1px solid;
   background: transparent;
   font-size: 12px;
@@ -125,7 +157,15 @@ Delete everything we dont need.
   margin-bottom: 30px;
 }
 .app-code span {
-  color: #8496A5;
+  color: #8496a5;
+}
+@media (max-width: 768px) {
+  h1.block-title {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 24px;
+  }
 }
 @media (min-width: 768px) {
   .app-code {
@@ -140,14 +180,14 @@ Delete everything we dont need.
   }
 }
 
-.client-stories{
+.client-stories {
   background-color: #eee;
-  p{
+  p {
     color: #666;
   }
 }
 
-.client-story-img{
+.client-story-img {
   display: block;
   margin: 0 auto;
   max-width: 400;
@@ -167,9 +207,6 @@ Delete everything we dont need.
   margin: 0 10px 30px;
 }
 
-
-
-
 /* footer block */
 .app-footer {
   background-color: #333;
@@ -179,7 +216,6 @@ Delete everything we dont need.
 .app-footer a {
   color: #fff;
 }
-
 
 /* general block overrrides */
 @media (max-width: 768px) {
@@ -191,12 +227,12 @@ Delete everything we dont need.
   }
 }
 
-.testimonial-image{
-  width:100%;
+.testimonial-image {
+  width: 100%;
 }
 /* general inverse overrides */
 .block-inverse .text-muted {
-  color: rgba(255, 255, 255, .7);
+  color: rgba(255, 255, 255, 0.7);
 }
 .block-inverse .block-bg-img {
   background-color: transparent;
@@ -209,6 +245,6 @@ Delete everything we dont need.
     align-items: center;
   }
 }
-.block .featured-list h3{
+.block .featured-list h3 {
   font-weight: 300;
 }

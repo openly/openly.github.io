@@ -1,7 +1,13 @@
 .block.block-secondary#get-started
   .container
     .row.app-align-center
-      .col-sm-5.col-sm-push-6.hidden-xs
+      .col-sm-6
+        h6.text-muted.text-uppercase Lets Flo
+        h3.m-t-0
+          | The smart solution for studios, agencies and brands who create content, is here.
+        p.lead.m-b-md.text-muted
+          | Enter your details and we’ll get in contact.
+      .col-sm-6
         div
           #ajaxmessage
           form.contact(action="https://nxavmsf4n5.execute-api.eu-west-1.amazonaws.com/prod/floWebsiteMessage", method="POST")
@@ -14,12 +20,12 @@
               .input-group
                 span.input-group-addon
                   span.fa.fa-user(style="margin:0 2px 0 3px;")
-                input.form-control.name(type='text', placeholder='First name', name="fname") 
+                input.form-control.name(type='text', placeholder='First name', name="fname")
             .form-group
               .input-group
                 span.input-group-addon
                   span.fa.fa-user(style="margin:0 2px 0 3px;")
-                input.form-control.name(type='text', placeholder='Last name', name="lname") 
+                input.form-control.name(type='text', placeholder='Last name', name="lname")
             .form-group
               .input-group
                 span.input-group-addon
@@ -29,11 +35,5 @@
               .input-group
                 span.input-group-addon
                   span.fa.fa-users
-                input.form-control.noemp(type='number', placeholder='Number of employees', name="no_emp") 
-            button.btn.btn-primary.btn-block(type='submit')  Get Started 
-      .col-sm-5.col-sm-pull-4
-        h6.text-muted.text-uppercase Lets Flo
-        h3.m-t-0 
-          | The smart solution for studios, agencies and brands who create content, is here.
-        p.lead.m-b-md.text-muted
-          | Enter your details and we’ll get in contact.
+                input.form-control.noemp(type='number', placeholder='Number of employees', name="no_emp")
+            button.btn.btn-primary.btn-block(type='submit')  Get Started

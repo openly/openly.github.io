@@ -22,23 +22,56 @@
 
     .ribbon {
       margin-left: -30px;
-      padding: 8px 15px;
-      border-radius: 0 3px 3px 0;
       margin-bottom: 15px;
+      position: relative;
+      &:before {
+        position: absolute;
+        left: -10px;
+        bottom: -10px;
+        border: 10px solid transparent;
+        width: 0;
+        height: 0;
+        content: "";
+        z-index: 0;
+      }
       .statcard-desc {
+        border-radius: 0 3px 3px 0;
+        padding: 8px 20px;
         color: white;
+        position: relative;
+        z-index: 1;
       }
       &.green {
-        background-color: #42b371;
+        .statcard-desc {
+          background-color: #42b371;
+        }
+        &:before {
+          border-right-color: #186c3b;
+        }
       }
       &.purple {
-        background-color: #a269f8;
+        .statcard-desc {
+          background-color: #a269f8;
+        }
+        &:before {
+          border-right-color: #6c47a4;
+        }
       }
       &.orange {
-        background-color: #f9a068;
+        .statcard-desc {
+          background-color: #f9a068;
+        }
+        &:before {
+          border-right-color: #d48451;
+        }
       }
       &.blue {
-        background-color: #4eaffe;
+        .statcard-desc {
+          background-color: #4eaffe;
+        }
+        &:before {
+          border-right-color: #3785c5;
+        }
       }
     }
     .statcard-number {

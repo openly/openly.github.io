@@ -1,54 +1,58 @@
 @import "./_variables.less";
-
-// text overrides
+// @import "https://use.typekit.net/swg0eqa.css";
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,600,700";
 @font-size-base: 16px;
-@font-family-sans-serif: "Muli", "Helvetica Neue", Helvetica, Arial, sans-serif;
-@text-color: #6C6F73;
-@headings-color: #2D3238;
+@font-family-sans-serif: 'Poppins', sans-serif;
+@text-color: #6c6f73;
+@headings-color: #2d3238;
 @line-height-base: 1.4;
 
-
 // gray override
-@gray-light: #BEC8CE;
-
+@gray-light: #bec8ce;
 
 // h3 override
 // @font-size-h3: 28px;
-
 
 // nav tranpsarent
 // @navbar-transparent-brand-hover-bg:      transparent;
 // @navbar-transparent-toggle-hover-bg:     transparent;
 // @navbar-transparent-toggle-border-color: transparent;
 
-
 // nav bordered
-@nav-bordered-color:              #000;
-@nav-bordered-color-active:       @brand-primary;
-@nav-bordered-font-weight:        300;
+@nav-bordered-color: #000;
+@nav-bordered-color-active: @brand-primary;
+@nav-bordered-font-weight: 300;
 @nav-bordered-font-weight-active: 700;
 
-
 // brand
-@brand-primary: #f0c517;
-
+@brand-primary: #48acff;
 
 // misc typography
 @headings-font-weight: 500;
-@btn-font-weight:      400;
-@letter-spacing-base:  -.02em;
-
+@btn-font-weight: 600;
+@letter-spacing-base: -0.02em;
 
 // lead
 @lead-letter-spacing: @letter-spacing-base;
-@lead-font-size:      floor((@font-size-base * 1.5));
-
+@lead-font-size: floor((@font-size-base * 1.5));
 
 // blocks
 @block-title-font-size-sm: floor((@font-size-base * 2.8));
-@block-title-font-size:    floor((@font-size-base * 2.5));
-@block-lead-font-size-sm:  floor((@font-size-base * 1.4));
-@block-vertical-padding:   100px;
-
+@block-title-font-size: floor((@font-size-base * 2.5));
+@block-lead-font-size-sm: floor((@font-size-base * 1.4));
+@block-vertical-padding: 100px;
 
 @import "./_components.less";
+.welcome-block .navbar {
+  .btn-primary {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    color: @brand-primary !important;
+    background: #fff !important;
+  }
+
+  .btn-primary:hover {
+    color: #fff !important;
+    background: @brand-primary !important;
+  }
+}

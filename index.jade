@@ -2,17 +2,17 @@
 #stage.stage
   .welcome-block
     .bg-image
-      .fs-bg(style="background-image:url(/images/flo-hero-treated.jpg)")
-    .block.block-inverse.app-header
+      .fs-bg
+    .block.app-header
       != partial('_comp/nav/top')
       != partial('_comp/home/welcome/index')
-  
-  != partial('_comp/home/do_more/index')
+
+  // != partial('_comp/home/do_more/index')
   != partial('_comp/home/workflows/index')
-  != partial('_comp/home/task_manager/index')
   != partial('_comp/home/reporting/index')
+  != partial('_comp/home/automate/index')
+  != partial('_comp/home/stats/index')
   != partial('_comp/home/external_partners/index')
   != partial('_comp/home/custom_lists/index')
-  != partial('_comp/home/features/index')
   != partial('_comp/home/contact/index')
   != partial('_comp/footer/index')

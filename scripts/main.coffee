@@ -89,7 +89,7 @@ $ ->
 
 handleScroll = ->
   st = $(window).scrollTop() || $(document.body).scrollTop()
-  if st > 200
+  if st > 100
     $(".navbar").addClass("top-nav-fixed").removeClass("app-navbar")
   else
     $(".navbar").removeClass("top-nav-fixed").addClass("app-navbar")

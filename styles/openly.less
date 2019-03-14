@@ -6,8 +6,8 @@
   font-weight: lighter;
 }
 .block-img {
-  max-height: 500px;
-  max-width: 100%;
+  max-height: 350px;
+  max-width: 80%;
 }
 .block {
   overflow: hidden;
@@ -21,21 +21,48 @@
   border-bottom: 1px solid #eee;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
 }
-
-.client-stories {
+.img-bg {
+  background: #f2f4f5;
+  margin: 30px 0;
+  img {
+    margin: -30px 0;
+  }
+}
+.gray-block-bg {
+  background: #f2f4f5;
+  overflow: visible;
+  margin-top: 100px;
+  .text-cont {
+    padding: 30px 0;
+  }
+  img.cont {
+    margin: -60px 0 20px;
+  }
+}
+.flo-btn {
+  background-color: #179247;
+  color: #fff;
+  border: none;
+  // font-weight: 600;
+  &:hover {
+    background-color: darken(#179247, 2%);
+  }
+}
+.stats {
   .statcard {
     background: white;
     padding: 20px 20px;
-
+    margin: 0 15px;
+    box-shadow: 3px 5px 4px 0 rgba(0, 0, 0, 0.3);
     .ribbon {
-      margin-left: -30px;
+      margin-left: -40px;
       margin-bottom: 15px;
       position: relative;
       &:before {
         position: absolute;
-        left: -10px;
-        bottom: -10px;
-        border: 10px solid transparent;
+        left: -20px;
+        bottom: -20px;
+        border: 20px solid transparent;
         width: 0;
         height: 0;
         content: "";
@@ -50,34 +77,34 @@
       }
       &.green {
         .statcard-desc {
-          background-color: #42b371;
+          background-color: #16a14d;
         }
         &:before {
-          border-right-color: #186c3b;
+          border-right-color: #c7e7d3;
         }
       }
-      &.purple {
+      &.cyan {
         .statcard-desc {
-          background-color: #a269f8;
+          background-color: #24a6a6;
         }
         &:before {
-          border-right-color: #6c47a4;
+          border-right-color: #cae9e8;
         }
       }
-      &.orange {
+      &.yellow {
         .statcard-desc {
-          background-color: #f9a068;
+          background-color: #f6af1c;
         }
         &:before {
-          border-right-color: #d48451;
+          border-right-color: #fbebcf;
         }
       }
-      &.blue {
+      &.samon {
         .statcard-desc {
-          background-color: #4eaffe;
+          background-color: #ee634b;
         }
         &:before {
-          border-right-color: #3785c5;
+          border-right-color: #fbd8d2;
         }
       }
     }

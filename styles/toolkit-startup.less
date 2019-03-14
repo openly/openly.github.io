@@ -25,7 +25,7 @@
 @nav-bordered-font-weight-active: 700;
 
 // brand
-@brand-primary: #48acff;
+@brand-primary: #24a6a6;
 
 // misc typography
 @headings-font-weight: 500;
@@ -42,18 +42,21 @@
 @block-lead-font-size-sm: floor((@font-size-base * 1.4));
 @block-vertical-padding: 100px;
 
+@brand-color-2: #179247;
+
 @import "./_components.less";
 .welcome-block .navbar {
   .btn-primary {
     padding-top: 5px !important;
     padding-bottom: 5px !important;
-    color: @brand-primary !important;
+    color: @brand-color-2 !important;
+    border-color: @brand-color-2 !important;
     background: #fff !important;
   }
 
   .btn-primary:hover {
     color: #fff !important;
-    background: @brand-primary !important;
+    background: @brand-color-2 !important;
     border: none;
   }
 }
